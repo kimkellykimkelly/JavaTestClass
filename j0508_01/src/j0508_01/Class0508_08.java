@@ -32,3 +32,4 @@ public class Class0508_08 {
 //		System.out.printf("[ 합계: %d, 평균: %.2f ]", total, avg);	
 	}
 }
+//dfd
