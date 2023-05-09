@@ -37,8 +37,6 @@ public class Class0509_11 {
 		
 		System.out.println(result);
 		
-		
-		
 	}
 
 }

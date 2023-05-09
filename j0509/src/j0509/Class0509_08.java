@@ -47,7 +47,7 @@ public class Class0509_08 {
 		
 		// 출력
 		System.out.println("입력한 소문자 : "+ch3);
-		System.out.println("변환한 소문자 : "+ch4);
+		System.out.println("변환된 대문자 : "+ch4);
 		
 		
 		//
