@@ -2,7 +2,7 @@ package j0509;
 
 import java.util.Scanner;
 
-public class C0509_10 {
+public class Class0509_10 {
 
 	public static void main(String[] args) {
 		
