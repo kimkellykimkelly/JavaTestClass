@@ -27,9 +27,9 @@ public class C0510_09 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		int i = 1;
-		while (i <= 10) {
-			System.out.println(i+"번째 숫자를 입력하시오");
+		int i = 0;
+		while (i < 10) {
+			System.out.println((i+1)+"번째 숫자를 입력하시오");
 			n = scan.nextInt();
 			sum += n;
 			

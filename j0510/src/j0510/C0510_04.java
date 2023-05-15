@@ -49,7 +49,7 @@ public class C0510_04 {
 		switch (c) {
 
 		case 'm': 
-		case 'M':
+		case 'M': // 이와 같이 'm'또는'M'일때, 두 번 적을 수 있음!
 			System.out.println("남자입니다");
 			break;
 		

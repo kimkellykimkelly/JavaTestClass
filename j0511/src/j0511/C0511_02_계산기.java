@@ -2,7 +2,7 @@ package j0511;
 
 import java.util.Scanner;
 
-public class C0511_02 {
+public class C0511_02_계산기 {
 
 	public static void main(String[] args) {
 
@@ -10,14 +10,16 @@ public class C0511_02 {
 //		int i = 10;
 //		while (i < 0) {
 //			System.out.println("i의 값 : " + i);
-//		}
+//		} 
+//		System.out.println("프로그램을 종료합니다.");
+		// => 한번도 실행안됨
 
 		// do while
 //		int i = 10;
 //		do {
 //			System.out.println("i의 값 : " + i);
 //		} while (i < 0);
-//	      }
+//	      } // => 한번은 실행됨
 
 //
 
@@ -35,30 +37,24 @@ public class C0511_02 {
 //		
 //		// 무한반복 - while
 		
-		while(true) {
-			System.out.println("프로그램 실행");
-		}			
-			
-		
-		while (true) {
-			System.out.println("숫자를 입력하세요.");
-			int num = scan.nextInt();
-			if (num == 0) {
-				// 프로그램을 종료
-				break; // 반복문은 break를 만나면 종료
-			}
-		}
-
-
-		// while로 한다면 프로그램이 바로 종료된다.
-		int i = 10;
-		while(i<0) {
-			System.out.println("i의 값 : "+ i);
-		}
-		System.out.println("프로그램을 종료합니다.");
+//		while(true) {
+//			System.out.println("프로그램 실행");
+//		}			
+//			
+//		//
+//		Scanner scan = new Scanner(System.in);
+//		
+//		while (true) {
+//			System.out.println("숫자를 입력하세요.");
+//			int num = scan.nextInt();
+//			if (num == 0) {
+//				// 프로그램을 종료
+//				break; // 반복문은 break를 만나면 종료
+//			}
+//		}
 
 		
-		//
+		// 계산기 프로그램 만들기
 		
 		Scanner scan = new Scanner(System.in);
 		int input = 0, num1 = 0, num2 = 0;

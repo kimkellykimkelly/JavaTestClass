@@ -2,15 +2,15 @@ package j0511;
 
 import java.util.Scanner;
 
-public class C0511_08 {
+public class C0511_08_랜덤숫자맞추기입력숫자들출력 {
 
 	public static void main(String[] args) {
 		// 랜덤숫자맞추기
 		// 10번 기회가 주어지고, 정답 확인 시 입력한 번호를 출력해라
-		
+		// 복습하면서 이 프로그램의 문제점 찾음 => apply 파일에서 보완해봄
+	
 		Scanner scan = new Scanner (System.in);
 		
-		int input = 0; //입력받은 변수
 		int random = 0; 
 		int count = 0; // 도전횟수
 		int[] num = new int[10]; // 입력한 숫자 저장
@@ -30,6 +30,7 @@ public class C0511_08 {
 			if (num[count] == random) {
 				System.out.println("정답");
 				break; // while 탈출
+				// 이 프로그램의 문제점: 10번 전에 맞추면, count가 안돼서 입력한 숫자 출력이 안됨!
 			} else {
 				System.out.println("오답. 다시 도전하세요");
 			}

@@ -2,11 +2,12 @@ package j0511;
 
 import java.util.Scanner;
 
-public class C0511_04 {
+public class C0511_04_continue {
 
 	public static void main(String[] args) {
 
 		// continue
+		
 //		for (int i = 0; i <= 10; i++) {
 //
 ////			if (i==5) {
@@ -19,6 +20,7 @@ public class C0511_04 {
 //
 //			System.out.println(i);
 
+		
 //		} // for
 
 		// 구구단 5단만 빼고 출력
@@ -81,7 +83,9 @@ public class C0511_04 {
 //				System.out.printf("%d * %d = %d \n", i, j, i * j);
 //			}
 //			System.out.println();
-//		}
+//		} 
+		// => 그냥 break만 있으면 모든 단 곱하기 5까지 출력되지만, 
+		// loop설정 후 loop break하면 2단에서 곱하기 5까지만 출력되고 끝남!
 
 		//
 
@@ -99,10 +103,10 @@ public class C0511_04 {
 
 			if (input == 0) {
 				System.out.println("프로그램 종료합니다");
-				break;
+				break; //while 탈출
 			}
 
-			// 조건문
+			// 조건문(1 입력했을 때 값 2개받아 결과값 출력하기 + *나갈 수 있게 하기*)
 			switch (input) {
 
 			case 1:
@@ -110,18 +114,21 @@ public class C0511_04 {
 					System.out.println("첫번째 숫자를 입력하세요(-1.이전페이지, -2.종료)");
 					n1 = scan.nextInt();
 					
+					//*
 					if (n1 == -1) {
-						break; // while 종료 -> case1 종료
+						break; // 바로 위 while 종료 -> case1, switch 종료 -> 맨 위 while페이지로 이동
 					}
 					if (n1 == -2) {
 						break loop;
 					}
+					//*
+					
 					System.out.println("두번째 숫자를 입력하세요");
-					n1 = scan.nextInt();
+					n2 = scan.nextInt();
 					System.out.printf("%d+%d=%d \n", n1, n2, (n1 + n2));
 				} // while
 			
-			} // case
+			} // switch
 
 		} // while
 

@@ -18,7 +18,7 @@ public class C0511_07 {
 //		}
 		
 		
-		// 배열 100개를 만들고 1-100까지 숫자 입력
+		// 배열 100개를 만들고 1-100까지 숫자 입력 후 출력
 //		int[] n = new int[100];
 //		for (int i = 0; i < n.length; i++) {
 //			n[i] = i+1;
@@ -31,7 +31,7 @@ public class C0511_07 {
 		
 		for (int i = 0; i < n.length; i++) {
 			n[i] = (int)(Math.random()*10)+1;
-			System.out.println(n[i]);
+			System.out.printf("%d ", n[i]);
 		}
 		
 		

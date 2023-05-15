@@ -24,7 +24,7 @@ public class C0510_08 {
 //			sum += i;
 //		}
 //		System.out.println(i+":"+sum); 
-		// => 위와 같이 하면 i가 11까지 돌아가므로, i=0; i<10으로 하던지 출력 시 i-1로 해야함.
+		// => 위와 같이 하면 최종 i는 11이 되므로, i=0; i<10으로 하던지 출력 시 i-1로 해야함.
 
 		// 숫자 3번 반복해서 입력받아, 합을 출력하시오.
 		// 1. 변수 선언 n, sum
@@ -96,30 +96,30 @@ public class C0510_08 {
 //		}
 
 		// 랜덤숫자 1-100까지의 랜덤숫자 1개를 출력하시오
-		int random = 0;
-		random = (int) (Math.random() * 100) + 1;
-		System.out.println(random);
-
-		// 숫자 맞추기 프로그램 10번 반복
-
-		Scanner scan = new Scanner(System.in);
-
-		int i = 1;
-		while (i <= 10) {
-			System.out.println(i+"번째 숫자입력해");
-			int input = scan.nextInt();
-
-			if (input == random) {
-				System.out.println("정답");
-				break; //없으면 정답이여도 계속 10번 돌아감
-			} else if (input > random) {
-				System.out.println("오답. 입력한 숫자보다 작은 수임");
-			} else {
-				System.out.println("오답. 입력한 숫자보다 큰 수임");
-			}
-
-			i++;
-		}
+//		int random = 0;
+//		random = (int) (Math.random() * 100) + 1;
+//		System.out.println(random);
+//
+//		// 숫자 맞추기 프로그램 10번 반복
+//
+//		Scanner scan = new Scanner(System.in);
+//
+//		int i = 1;
+//		while (i <= 10) {
+//			System.out.println(i+"번째 숫자입력해");
+//			int input = scan.nextInt();
+//
+//			if (input == random) {
+//				System.out.println("정답");
+//				break; //없으면 정답이여도 계속 10번 돌아감
+//			} else if (input > random) {
+//				System.out.println("오답. 입력한 숫자보다 작은 수임");
+//			} else {
+//				System.out.println("오답. 입력한 숫자보다 큰 수임");
+//			}
+//
+//			i++;
+//		}
 
 	}
 

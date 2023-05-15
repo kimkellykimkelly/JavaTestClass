@@ -24,7 +24,7 @@ public class C0511_03 {
 
 		int i = 0, sum = 0;
 
-		for (i = 0;; i++) { //조건없으므로 무한반복
+		for (i = 0;; i++) { //조건없으므로 무한반복/ ;; 두개필요
 			if (sum > 10) {
 				break;
 			}

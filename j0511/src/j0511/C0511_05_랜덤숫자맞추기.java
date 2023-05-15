@@ -2,14 +2,14 @@ package j0511;
 
 import java.util.Scanner;
 
-public class C0511_05 {
+public class C0511_05_랜덤숫자맞추기 {
 
 	public static void main(String[] args) {
 
-		// 숫자맞추기 프로그램
+		// 숫자맞추기 프로그램(도전기회3번, 3번까지 못 맞추면 정답주고 나가기)
 
 		// 1. 랜덤 숫자 생성 (1~100)
-		// 2. 숫자맞추기 10번 반복
+		// 2. 숫자맞추기 3번 반복
 		// 0. 종료
 
 		Scanner scan = new Scanner(System.in);

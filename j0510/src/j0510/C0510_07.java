@@ -23,9 +23,9 @@ public class C0510_07 {
 //		System.out.println(random);
 
 		
-		// 숫자를 입력받아(1,2,3), 랜던 값과 같은 값일 경우 당첨, 그렇지 않으면 꽝
+		// 숫자를 입력받아(1,2,3), 랜덤 값과 같은 값일 경우 당첨, 그렇지 않으면 꽝
 
-		int random = (int)(Math.random()*10) +1;
+		int random = (int)(Math.random()*10) +1; // => 1~10 정수
 		int i = 0;
 
 		Scanner scan = new Scanner(System.in);

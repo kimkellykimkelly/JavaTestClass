@@ -13,7 +13,7 @@ public class C0510_05 {
 //		
 //		if (str.equalsIgnoreCase("c")) { // 대소문자 관계없음
 //			// str은 == 불가능. str.equals("c") 로 써야함.
-//			// 기본형 8개(boolean, char, byte, short, int, long, float, 등) 만 == 사용가능.
+//			// 기본형 8개(boolean, char, byte, short, int, long, float, double) 만 == 사용가능.
 //			System.out.println("c맞음");
 //		} else {
 //			System.out.println("c아님");
