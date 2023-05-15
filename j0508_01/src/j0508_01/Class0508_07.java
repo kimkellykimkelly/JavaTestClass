@@ -4,7 +4,7 @@ public class Class0508_07 {
 
 	public static void main(String[] args) {
 		// printf, println, print
-		// println: 출력 후 enter키 포함
+		// println: print + \n
 		// \n 단락. \t tab키
 		System.out.println(10 / 3); // 3
 		System.out.println(10 / 3.0); // 3.3333~5. 마지막 5는 허수.

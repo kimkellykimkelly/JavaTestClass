@@ -1,5 +1,5 @@
 package j0508_01;
-
+//
 public class Class0508_01 {
 	
 	public static void main(String[] args) {

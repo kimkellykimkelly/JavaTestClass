@@ -13,7 +13,7 @@ public class Class0508_06 {
 		
 		// 큰 쪽 -> 작은 쪽으로 넘어갈 때, ()적어줘야함!
 		float f = 1.6f; // 소수점이 있음.
-		int i = (int)f; // 강제형변환 => 1이 됨.
+		int i = (int)f; // 강제형변환 => 1이 됨.=>????
  		System.out.println(i);
  		
  		// 작은 쪽 -> 큰 쪽 넘어갈때는 ()안써도됨.
@@ -24,17 +24,14 @@ public class Class0508_06 {
  		// String > double > float > long > int > char,byte,short
  		
  		char ch  = 'A';
- 		int n = (int)ch; // (int) 생략가능
- 		System.out.println(n); // 65. int
+ 		int n = (int)ch; // char(작은쪽) -> int(큰쪽)로 변경이므로 (int) 생략가능
+ 		System.out.println(n); // => 'A'는 int형으로 65임.
  		
  		int n2 = 97;
- 		char ch2 = (char)n2;
- 		System.out.println(ch2); //a 
+ 		char ch2 = (char)n2; // int -> char로 변경
+ 		System.out.println(ch2); // => 97은 char형으로 'a'임. 
  		
- 		
- 		
- 		
- 		
+
 	}
 
 }
