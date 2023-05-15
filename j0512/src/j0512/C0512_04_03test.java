@@ -10,39 +10,68 @@ public class C0512_04_03test {
 		Scanner scan = new Scanner(System.in);
 
 		// 변수 선언
-		int random = 0; // 랜덤번호
-		int temp = 0; // 임시저장변수(C0511_12 참고)
-		int count = 0; // 당첨번호개수
+		int random = 0, temp = 0, count = 0;
 
 //		1. 배열 생성
-		int[] lotto = new int[45]; // 로또 번호
-		int[] myNum = new int[6]; // 입력번호
-		int[] lottoNum = new int[6]; // 당첨 번호
+		int[] lotto = new int[45];
+		int[] myNum = new int[6];
+		int[] lottoNum = new int[45];
 
-//		2. 로또 번호 생성
+//		2. 로또 번호 생성 1~45
 		for (int i = 0; i < lotto.length; i++) {
-			lotto[i] = i + 1; // 1,2,3,...45
+			lotto[i] = i + 1;
 		}
 
 //		3. 로또 번호 섞기 (1000번)
 		for (int i = 0; i < 1000; i++) {
-			random = (int)(Math.random()*45); //0~44자리
-			temp = lotto[0];
+			random = (int) (Math.random() * 45);
+			lotto[0] = temp;
 			lotto[0] = lotto[random];
 			lotto[random] = temp;
-			
-			
 		}
 
 //		4. 로또 번호 입력
+		for (int i = 0; i < lottoNum.length; i++) {
+			System.out.println((i + 1) + "번째 로또번호를 입력하세요");
+			myNum[i] = scan.nextInt();
+		}
 
 //		5. 로또 번호 개수 확인
+		for (int i = 0; i < 6; i++) { // lotto
+			for (int j = 0; j < myNum.length; j++) { // myNum
 
-//		6. 로또 번호 출력
-//		7. 입력 번호 출력
-//		8. 당첨 번호 출력
-//		9. 당첨 개수 출력
+				if (lotto[i] == myNum[j]) {
+					lotto[i] = lottoNum[count];
+					count++;
+					continue;
+				}
+			}
+		}
 
+//		6. 출력
+//		6-1. 로또 번호 출력
+		System.out.println("로또번호 자동생성 6개 : ");
+		for (int i = 0; i < 6; i++) {
+			System.out.print(lotto[i] + " ");
+		}
+		System.out.println();
+
+//		6-2. 입력 번호 출력
+		System.out.println("입력번호 6개 : ");
+		for (int i = 0; i < 6; i++) {
+			System.out.print(myNum[i] + " ");
+		}
+		System.out.println();
+		
+//		6-3. 당첨 번호 출력
+		System.out.println("당첨번호 : ");
+		for (int i = 0; i < count; i++) {
+			System.out.print(lottoNum[i] + " ");
+		}
+		System.out.println();
+		
+//		6-4. 당첨 개수 출력
+		System.out.println("당첨개수 :" + count);
 	}
 
 }

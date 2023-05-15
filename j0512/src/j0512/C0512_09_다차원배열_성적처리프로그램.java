@@ -2,7 +2,7 @@ package j0512;
 
 import java.util.Scanner;
 
-public class C0512_09 {
+public class C0512_09_다차원배열_성적처리프로그램 {
 
 	public static void main(String[] args) {
 		// 다차원배열 퀴즈: 이름, 평균도 추가로 입력하기
@@ -10,7 +10,7 @@ public class C0512_09 {
 		
 		Scanner scan = new Scanner (System.in);
 		
-		int[][] score = new int[2][4];
+		int[][] score = new int[2][4]; // =>2명
 		String[] title = {"이름", "국어", "영어", "수학", "합계", "평균"};
 		String[] name = new String[2];
 		double[] avg = new double[2];

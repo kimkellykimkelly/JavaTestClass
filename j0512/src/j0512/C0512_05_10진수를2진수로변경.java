@@ -2,7 +2,7 @@ package j0512;
 
 import java.util.Scanner;
 
-public class C0512_05 {
+public class C0512_05_10진수를2진수로변경 {
 
 	public static void main(String[] args) {
 

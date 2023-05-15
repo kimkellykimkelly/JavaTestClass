@@ -2,7 +2,7 @@ package j0512;
 
 import java.util.Scanner;
 
-public class C0512_01 {
+public class C0512_01_C0511_10test {
 
 	public static void main(String[] args) {
 		// 성적입출력 프로그램 (0511_10 파일과 100% 똑같은 내용임)

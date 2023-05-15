@@ -2,7 +2,7 @@ package j0512;
 
 import java.util.Scanner;
 
-public class C0512_02 {
+public class C0512_02_성적처리프로그램 {
 
 	public static void main(String[] args) {
 		// [성적처리프로그램] (입력을 한번에 다 하지 않더라도, 나중에 다시 이어서 할 수 있게 만들기)
