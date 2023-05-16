@@ -45,7 +45,7 @@ public class C0515_09_C0512_02에배열및성적수정추가 {
 
 			input = scan.nextInt();
 
-			if (input == 0) { // 01파일에서, 여기랑 위 while에서 출력 부분만 추가됨
+			if (input == 0) { 
 				System.out.println("프로그램을 종료합니다");
 				break; // while 문 탈출
 			}
@@ -110,7 +110,7 @@ public class C0515_09_C0512_02에배열및성적수정추가 {
 				modifyName = scan.next();
 
 				int chk = 0; // 찾을 학생이 없을 경우 0, 있으면 1
-				for (int i = 0; i < count; i++) { // 입력한 학생 수만큼만 반복
+				for (int i = 0; i < count; i++) { // 입력한 학생 수만큼만 반복해서 한명한명 찾은 후에, 찾는 학생이 없으면 ~ 라는 조건을 걸어야함!
 					if (name[i].equals(modifyName)) { // 입력한 학생 모두 반복
 						// => 찾는 학생 없을 경우로 else를 쓰면, else가 for안에 있으므로
 						// + 해당 학생이 있는 i자리를 찾기 전까지 반복 시마다 찾는 학생 없음이 출력됨. 
