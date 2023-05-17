@@ -33,7 +33,15 @@ public class C0516_01_성적처리프로그램_final {
 		// 무한반복
 		loop: while (true) {
 			// 화면출력부분
-			
+			System.out.println("[성적처리프로그램]");
+			System.out.println("1. 성적입력");
+			System.out.println("2. 성적출력");
+			System.out.println("3. 성적수정");
+			System.out.println("4. 등수처리");
+			System.out.println("5. 학생성적검색");
+			System.out.println("0. 프로그램 종료");
+			System.out.println("----------------");
+			System.out.println("원하는 번호를 출력하세요");
 			choice = scan.nextInt();
 
 			switch (choice) {
