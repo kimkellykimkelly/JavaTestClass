@@ -48,6 +48,7 @@ public class C0516_07_01에서메소드로변경 {
 			screen();
 			
 			choice = scan.nextInt();
+			
 
 			switch (choice) {
 
