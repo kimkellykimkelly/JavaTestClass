@@ -1,5 +1,5 @@
 package j0522;
-
+//
 public class Triangle extends Shape {
 
 	// 삼각형 - 점이 3개 필요 => 배열로 받음
