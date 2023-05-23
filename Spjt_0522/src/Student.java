@@ -1,5 +1,5 @@
 
-public class Student_final { // Student class_final
+public class Student { 
 
 	// 클래스 변수
 	static String[] title = {"학번","이름","국어","영어","수학","합계","평균"};
@@ -22,10 +22,10 @@ public class Student_final { // Student class_final
 	}
 	
 	// 기본 생성자
-	Student_final(){}
+	Student(){}
 	
 	// 매개변수 생성자
-	Student_final(String name, int kor, int eng, int math){
+	Student(String name, int kor, int eng, int math){
 		this.name = name;
 		this.kor = kor;
 		this.eng = eng;
