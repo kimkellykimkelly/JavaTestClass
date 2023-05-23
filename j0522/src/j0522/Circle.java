@@ -24,12 +24,12 @@ public class Circle extends Shape {
 	
 	int r; // 인스턴스변수: 객체선언 후 참조변수.
 	
-	// 생성자 - 클래스명과 일치, void 없음
+	// 기본 생성자 (생성자: 클래스명과 일치, void 없음)
 	Circle(){
 		this(new Point(0,0),100); // this(): 다른 생성자 호출
 	}
 	
-	// 생성자
+	// 매개변수 생성자
 	Circle(Point center, int r){
 		this.center = center; // this:인스턴스 변수 호출	
 		this.r= r;
