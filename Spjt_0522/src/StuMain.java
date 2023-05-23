@@ -9,7 +9,7 @@ public class StuMain {
 		// 성적처리프로그램
 
 		// 배열 선언
-		Student_final[] s = new Student_final[10]; 
+		Student[] s = new Student[10]; 
 		
 		//변수
 		int choice = 0; // 번호 입력
@@ -64,7 +64,7 @@ public class StuMain {
 //					math = scan.nextInt();
 //					
 //					// 객체 선언 + 매개변수 생성자 호출 
-//					s[i] = new Student_final(name,kor,eng,math);
+//					s[i] = new Student(name,kor,eng,math);
 //							
 //					count++;
 //				} // for
@@ -84,7 +84,7 @@ public class StuMain {
 	
 	// 메소드 - 리턴타입 메소드명(매개변수){}
 	// case1을 메소드로 만들기
-	static int stuInput(int count, Student_final[] s) { // int count는 기본형이므로 return 필요, s는 참조변수이므로 불필요!!!
+	static int stuInput(int count, Student[] s) { // int count는 기본형이므로 return 필요, s는 참조변수이므로 불필요!!!
 		
 		String name = "";
 		int kor = 0, eng = 0, math = 0;
@@ -107,7 +107,7 @@ public class StuMain {
 			math = scan.nextInt();
 			
 			// 객체 선언 + 매개변수 생성자 호출 
-			s[i] = new Student_final(name,kor,eng,math);
+			s[i] = new Student(name,kor,eng,math);
 					
 			count++;
 		} // for
