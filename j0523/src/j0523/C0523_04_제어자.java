@@ -7,7 +7,7 @@ public class C0523_04_제어자 {
 		// 접근 제어자: public/protected/default/private (4개 외우기!!!!!!!!!)
 		// 그 외: static/final/abstract/native/transient/synchronized/volatile/strictfp
 		
-		// 접근제어자 - 변수에는 4가지 모두 사용 가능/ class에는 public과 default만 사용 가능
+		// 접근제어자 - 변수,메소드에는 4가지 모두 사용 가능/ class에는 public과 default만 사용 가능
 		
 		// final: 잘 안쓰임
 		int num = 5;
