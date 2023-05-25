@@ -1,7 +1,8 @@
+package j0523;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class StuMain_0523 {
+public class StuMain {
 
 	static Scanner scan = new Scanner(System.in);
 
@@ -9,7 +10,7 @@ public class StuMain_0523 {
 		// 성적처리프로그램
 
 		// 배열 선언
-		Student_0523[] s = new Student_0523[10]; 
+		Student[] s = new Student[10]; 
 		
 		//변수
 		int choice = 0; // 번호 입력
@@ -52,8 +53,8 @@ public class StuMain_0523 {
 				
 //				// 제목
 //				System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s \n", 
-//						Student_0523.title[0], Student_0523.title[1],Student_0523.title[2],Student_0523.title[3],
-//						Student_0523.title[4], Student_0523.title[5], Student_0523.title[6], Student_0523.title[7]);
+//						Student.title[0], Student.title[1],Student.title[2],Student.title[3],
+//						Student.title[4], Student.title[5], Student.title[6], Student.title[7]);
 //				System.out.println("----------------------------------------------------------------------------");
 //				// "학번","이름","국어","영어","수학","합계","평균","등수"
 //				for (int i = 0; i < count; i++) {
@@ -92,7 +93,7 @@ public class StuMain_0523 {
 	
 	// 메소드 - 리턴타입 메소드명(매개변수){}
 	// case1을 메소드로 만들기
-	static int stuInput(int count, Student_0523[] s) { // int count는 기본형이므로 return 필요, s는 참조변수이므로 불필요!!!
+	static int stuInput(int count, Student[] s) { // int count는 기본형이므로 return 필요, s는 참조변수이므로 불필요!!!
 		
 		String name = "";
 		int kor = 0, eng = 0, math = 0;
@@ -115,7 +116,7 @@ public class StuMain_0523 {
 			math = scan.nextInt();
 			
 			// 객체 선언 + 매개변수 생성자 호출 
-			s[i] = new Student_0523(name,kor,eng,math);
+			s[i] = new Student(name,kor,eng,math);
 					
 			count++;
 		} // for
@@ -125,12 +126,12 @@ public class StuMain_0523 {
 	
 	
 	// case2를 메소드로 만들기
-	static void stuOutput(int count, Student_0523[] s) {
+	static void stuOutput(int count, Student[] s) {
 		
 		// 제목
 		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s \n", 
-				Student_0523.title[0], Student_0523.title[1],Student_0523.title[2],Student_0523.title[3],
-				Student_0523.title[4], Student_0523.title[5], Student_0523.title[6], Student_0523.title[7]);
+				Student.title[0], Student.title[1],Student.title[2],Student.title[3],
+				Student.title[4], Student.title[5], Student.title[6], Student.title[7]);
 		System.out.println("----------------------------------------------------------------------------");
 		// "학번","이름","국어","영어","수학","합계","평균","등수"
 		for (int i = 0; i < count; i++) {

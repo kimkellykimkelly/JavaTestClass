@@ -1,3 +1,4 @@
+package j0522;
 
 public class Student { 
 

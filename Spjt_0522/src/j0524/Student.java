@@ -1,5 +1,6 @@
+package j0524;
 
-public class Student_0523 { // Student에서 접근제어자, get set 추가
+public class Student { // 0523과 똑같음
 
 	// 클래스 변수
 	static String[] title = {"학번","이름","국어","영어","수학","합계","평균"};
@@ -22,10 +23,10 @@ public class Student_0523 { // Student에서 접근제어자, get set 추가
 	}
 	
 	// 기본 생성자
-	public Student_0523(){}
+	public Student(){}
 	
 	// 매개변수 생성자
-	public Student_0523(String name, int kor, int eng, int math) {
+	public Student(String name, int kor, int eng, int math) {
 		super();
 		this.name = name;
 		this.kor = kor;
