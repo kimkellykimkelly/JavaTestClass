@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-
+// 잘 되는지 해보기!!!
 public class C0531_02_stuMain {
 
 	public static void main(String[] args) {
