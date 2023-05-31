@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class C0531_02_stuMain {
 
 	public static void main(String[] args) {
-		//
+		
 		Scanner scan = new Scanner(System.in);
 
 		// 객체선언
@@ -60,7 +60,7 @@ public class C0531_02_stuMain {
 				System.out.println("[학생 성적 저장 완료]");
 				System.out.println();
 				break;
-				
+
 
 			} // switch
 

@@ -12,14 +12,15 @@ public class C0531_07_Stuprocess_case9 {
 
 //		String data = "1,홍길동,100,100,99\r\n2,유관순,99,99,98\r\n3,이순신,67,56,45\r\n";
 		
-		String data = "";
-		
 		List<Student> list = new ArrayList<>();
 		list.add(new Student(1,"홍길동",100,100,99));
 		list.add(new Student(2,"유관순",99,99,98));
 		list.add(new Student(3,"이순신",67,56,45));
 		
 		// 파일 저장
+		
+		String data = "";
+		
 		for (int i = 0; i < list.size(); i++) {
 			Student s = list.get(i);
 			data += String.format("%d,%s,%d,%d,%d\r\n", 
@@ -40,7 +41,7 @@ public class C0531_07_Stuprocess_case9 {
 				e2.printStackTrace();
 			}
 		}
-		
+		System.out.println("파일저장 완료!!");
 		
 
 	} // main
