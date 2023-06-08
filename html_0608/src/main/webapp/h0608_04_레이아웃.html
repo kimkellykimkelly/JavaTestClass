@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>블록레벨 vs 인라인레벨 / display </title>
+		<!-- 블록레벨: 혼자 한 줄을 차지. <div>, <p> -->
+		<!-- 인라인레벨: <img>, <span>  -->
+		<style type="text/css">
+		
+			*{padding: 0; margin: 0;}
+			/* padding: 안쪽여백; margin: 바깥여백; */
+			
+			div{width: 300px; height: 200px; background: yellow;
+			    border: 2px solid black;
+			    margin: 30px auto;
+			    padding: 50px; box-sizing: border-box;} 
+			    /* 안쪽 여백을 주되, 박스 원래 크기대로 고정 (border-box없으면 크기가 달라져버림)*/
+			    
+			#i01{background: url("images/back1.jpg") no-repeat;}
+			#i02{background: url("images/back2.jpg") no-repeat;}
+			#i03{background: url("images/back3.jpg") no-repeat;} 
+			#i03:hover{display: none;} /* 마우스 대면 사라짐 */
+
+			span{display: inline-block; 
+			/* 옆으로 붙음 / 그냥 block하면 다음 줄로 붙음  */
+		         width: 300px; height: 200px; 
+		         margin-right: 50px;
+		         background: yellow;
+			     border: 2px solid black;}
+			     
+		</style>
+	</head>
+	
+	<body>
+		<div id="i01">1</div>
+		<div id="i02">2</div>
+		<div id="i03">3</div>
+		
+		<span>444444444444</span>
+		<span>55555555555555</span>
+		<span>66666666666</span>
+	</body>
+</html>
