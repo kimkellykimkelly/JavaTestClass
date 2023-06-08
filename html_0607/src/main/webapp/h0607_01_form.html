@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>form: 사용자가 웹 사이트로 정보를 보낼 수 있는 요소, label for</title>
+	</head>
+	
+	<body>
+		<form action="#" name="frm01" method="get">
+			<fieldset> <!--div가 더 많이 쓰임-->
+			 <legend>개인정보</legend> <!--잘안쓰임-->
+
+				<ul>
+				  <li>
+				    <label for="name">이름</label> 
+				    <!--라벨에 for를 쓰면, 라벨 누르면 input이랑 연결됨. span은 안되기 때문에 주로 form안에서 label 사용함-->
+				    <input type="text" id="name">
+				  </li>
+				  <li>
+				    <span for="email">메일주소</span>
+				    <input type="text" id="email">
+				  </li>
+				</ul>
+			</fieldset>
+			<fieldset>
+			  <ul>
+			    <li>
+			      <label for="id">아이디</label>
+			      <input type="text" id="id">
+			    </li>
+			  </ul>
+			  <ul>
+			    <li>
+			      <label for="pw">비밀번호</label>
+			      <input type="text" id="pw">
+			    </li>
+			  </ul>
+			</fieldset>
+		</form>
+	</body>
+</html>

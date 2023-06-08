@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css_주요 선택자(전체 선택자, 태스 선택자, 클래스(class) 선택자, id 선택자)</title>
+		<style>
+            @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap'); 
+            /* 구글 웹 폰트 검색해서 Black Han Sans 글씨체 가져옴 */
+
+            *{margin: 0; padding: 0;}
+            
+			h2{font-size: 30px; color: #333; letter-spacing: -3px;}  /* 글자 간격 */
+			p{font-size: 14px; color: #787878; letter-spacing: -1px; margin-left: 20px;} /*공백주기*/
+			h4{color: #333; font-weight: bold; font-size: 20px; margin-top: 50px; font-family: 'Black Han Sans', sans-serif;}
+			
+			.col1{color:orange;}  /* . = class! (공통으로 적용시킬 때) */
+			#fo1{font-size:50px;}  /* # = id! (단독으로 적용시킬 때) */
+		</style>
+	</head>
+	
+	<body>
+		<h2>객실 이용안내</h2>
+			<p class="col1">고객여러분의 안전하고 쾌적한 객실 이용을 위한 안내서 입니다.</p>
+			<hr>
+		
+		<h4 class="col1" id="fo1">입실 안내 Check-in</h4>
+			<ul>
+			  <li>회원의 권리를 보장하기 위하여 회원 본인 확인 후 회원 본인이 아닐 때에는 회원초청 요금이 적용됩니다.</li>
+			  <li>규정 숙박정원 초과 시 미리 말씀하여 주시면 추가요금을 할인 받으실 수 있습니다.</li>
+			  <li>22시 이후 입실하실 경우 사전에 프런트로 연락 주시기 바랍니다.</li>
+			  <li>상기 입실 시간은 사업장에 따라 상이 할 수 있습니다.</li>
+			</ul>
+			
+		<h4 class="col1">퇴실 안내 Check-out</h4>
+			<ul>
+			  <li>퇴실 시 객실을 정리하시고 자율퇴실 점검증을 작성하시어 프런트에 객실키와 함께 반납하신 후 객실요금을 지불하십시오.</li>
+			  <li>Late check-out(늦은 퇴실)의 경우 별도의 요금이 부과됩니다. (30분당 금액/VAT 포함)</li>
+			  <li>(패밀리, 스위트 : 회원 13,000원, 비회원 25,000원 / 노블리안 : 회원 22,000원, 비회원 35,000원 / 호텔 25,000원)</li>
+			  <li>※ 오후 3시 이후 퇴실 시 1박 요금 적용</li>
+			</ul>
+			
+		<h4>객실 정원 안내 Max, Pax</h4>
+			
+			
+	</body>
+</html>
