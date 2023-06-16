@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Class</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<style>
+			div{width: 200px; height: 200px; border: 1px solid black;}
+			.st{border-radius: 10px;}
+			.on{background: yellow;}
+			.off{background: white; border: 5px solid black;}
+		</style>
+		
+		<script>
+		
+			/* 제이쿼리 구문" $(function(){});  */
+			$(function(){
+			
+			}); // 제이쿼리 구문
+			
+			// 자바스크립트 함수 => 제이쿼리 구문($~)은 넣을 수 있지만, function은 넣을 수 없음?
+			function btn(){
+				$("div").toggleClass("on"); // 클래스 넣었다 뺐다 
+			}
+
+			function btn1(){
+				$("div").addClass("on"); // 클래스 추가
+				$("div").removeClass("off"); // 클래스 제거
+			}
+
+			function btn2(){
+				$("div").removeClass("on");
+				$("div").addClass("off");
+			}
+	
+		</script>
+	
+		
+		
+	</head>
+	
+	<body>
+		<div class="st on"></div>
+		
+		<button onclick="btn()">토글클래스</button>
+		
+		<button onclick="btn1()">클래스 추가</button>
+		<button onclick="btn2()">클래스 삭제</button>
+	</body>
+</html>
