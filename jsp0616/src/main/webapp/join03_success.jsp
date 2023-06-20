@@ -80,8 +80,8 @@
 				<p>
 					감사합니다.
 					<strong>회원가입이 완료되었습니다.</strong>
-					<strong><% request.getParameter("id") %></strong>
-					<strong><% request.getParameter("name") %></strong>
+					<strong><% request.getParameter("id"); %></strong>
+					<strong><% request.getParameter("name"); %></strong>
 				</p>
 			</div>	
 				
