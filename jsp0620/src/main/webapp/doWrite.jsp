@@ -1,5 +1,5 @@
-<%@page import="com.java.www.BoardDao"%>
-<%@page import="com.java.www.Board"%>
+<%@page import="com.java.www.dao.BoardDao"%>
+<%@page import="com.java.www.dto.Board"%>
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@page import="javax.swing.DefaultBoundedRangeModel"%>
 <%@page import="com.oreilly.servlet.MultipartRequest"%>

@@ -48,11 +48,7 @@ public class BoardDao {
 		   	 pstmt.setString(3, userBcontent);
 		   	 pstmt.setString(4, userBfile);
 		   	 
-		   	 result = pstmt.executeUpdate();
-		   	 
-    		
-    		
-    		
+		   	 result = pstmt.executeUpdate();		
     	}catch(Exception e){
 	    	e.printStackTrace();
 	    }finally{
@@ -64,6 +60,7 @@ public class BoardDao {
 	    }
     	return result;
     } // insertOne()
+    
     
     // 게시글 1개 가져오기
     public Board selectOne(int userBno) {
@@ -135,6 +132,7 @@ public class BoardDao {
 	    }
 		return list;
 	} //selectAll()
+	
 	
 	// 커넥션 연결메소드 - conn
 		private Connection getConnection() {
